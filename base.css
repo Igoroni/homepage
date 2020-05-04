@@ -19,7 +19,7 @@ html,
 body {
   margin: 0;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgb(46, 10, 87);
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -501,7 +501,7 @@ article {
 
 /* Avatar */
 .avatar-wrapper {
-  padding: 0 1em;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -563,13 +563,69 @@ article {
   margin-bottom: 0.25rem;
 }
 
+/* Achievements */
+.winner::before {
+  content: url(./images/win.png);
+}
+ul > li.win {
+  margin-bottom: 0.5rem;
+}
+ul > li.win:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+ul > li.win::before {
+  content: url(./images/trophy.png);
+}
+
+/* experience-hover */
+.experience > li:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* to-top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  z-index: 99;
+  opacity: 0.4;
+}
+#myBtn > i {
+  font-size: 48px;
+  color: rgb(77, 241, 112);
+}
+#myBtn:hover {
+  opacity: 0.7;
+}
+
+/* word-divider */
+.energy::before {
+  content: url(./images/light-icon-png.png);
+}
+.be_feet::after {
+  content: url(./images/muscle.png);
+}
+.more_books::after {
+  content: url(/images/book.png);
+}
+.girlfriend::after {
+  content: url(./images/children.png);
+}
+.akuma_family::after {
+  content: url(./images/angry.png);
+}
+
 /* Contacts */
 .contacts {
   list-style: none outside none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 0;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0;
   white-space: nowrap;
   font-size: 0.9em;
@@ -583,7 +639,7 @@ article {
   display: none;
 }
 .contacts li a {
-  color: black;
+  color: rgb(138, 4, 4);
   transition: color 0.2s ease-in-out;
 }
 .contacts li a.facebook:hover {
@@ -731,7 +787,7 @@ li.details > input {
 
 /* Highlighted list item */
 li.highlighted {
-  padding: 0.5em;
+  padding: 0.1em;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
 }
