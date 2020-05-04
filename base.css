@@ -563,6 +563,16 @@ article {
   margin-bottom: 0.25rem;
 }
 
+/* Achievements */
+.winner::before {
+  content: url(./images/win.png);
+}
+ul > li.win {
+  margin-bottom: 0.5rem;
+}
+ul > li.win::before {
+  content: url(./images/trophy.png);
+}
 /* Contacts */
 .contacts {
   list-style: none outside none;
