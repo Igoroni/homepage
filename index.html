@@ -130,7 +130,7 @@
                 </li>
               </ul>
               <h3> Experience </h3>
-              <ul class="timeline">
+              <ul class="timeline experience">
                 <li class="highlighted">
                   <p><strong><em>2018</em></strong> Amongst many fighters of the past was featured in the movie "Ready
                     Player One". Ryu ready always!
@@ -215,8 +215,11 @@
               </section>
               <section>
                 <h3>Skills</h3>
-                <p class="tags small">KARATE * ENERGY ATTACK SHORYUKEN * WALKING BAREFOOT * PLAYING VIDEOGAMES * DOING
-                  BURGERS * MASHING POTATOES * COPYWRITING * ACTING VOICEOVERS
+                <p class="tags small"><span class="energy">KARATE</span><span class="energy">ENERGY ATTACK</span><span
+                    class="energy">SHORYUKEN</span><span class="energy">WALKING BAREFOOT</span><span
+                    class="energy">PLAYING VIDEOGAMES</span><span class="energy">
+                  </span><span class="energy">DOING BURGERS</span><span class="energy">MASHING POTATOES</span><span
+                    class="energy">COPYWRITING</span>
                 </p>
               </section>
               <section>
@@ -226,19 +229,23 @@
                 </p>
               </section>
               <section>
-                <h3>Likes&#x1f603;</h3>
-                <p class="tags small">GI VEGETABLES BLOOD SMALL MARSHMELLOWS RED COLOR KILLED ENEMY
+                <h3>Likes</h3>
+                <p class="tags small">VEGETABLES &#128512;BLOOD &#128512;SMALL MARSHMELLOWS &#128512;RED COLOR
+                  &#128512;KILLED ENEMY
                 </p>
               </section>
               <section>
-                <h3>Dislikes&#x1f61e;</h3>
-                <p class="tags small">BISONS GHOSTS SMARTPHONES SMELL OF SEAFOOD BARBER SHOPS SLEEVES
+                <h3>Dislikes</h3>
+                <p class="tags small">BISONS &#x1f61e;GHOSTS &#x1f61e;SMARTPHONES &#x1f61e;SMELL OF SEAFOOD&#x1f61e;
+                  BARBER SHOPS&#x1f61e; SLEEVES
                 </p>
               </section>
               <section>
                 <h3>Wants&#x1f97a;</h3>
-                <p class="tags small bulleted">BE FIT WRITE MORE BOOKS FIND A GIRLFRIEND TO GO TO CINEMA WITH KILL ALL
-                  OF AKUMA FAMILY
+                <p class="tags small bulleted"><span class="be_feet"> BE FIT</span><span class="more_books">WRITE
+                    MORE BOOKS</span><span class="girlfriend">FIND A GIRLFRIEND TO GO TO CINEMA WITH</span><span
+                    class="akuma_family">KILL ALL
+                    OF AKUMA FAMILY</span>
                 </p>
               </section>
               <section>
@@ -266,6 +273,28 @@
       </div>
     </article>
   </main>
+  <div id="scroll-to-top">
+    <button onclick="topFunction()" id="myBtn" title="Go-to-top"><i class='fas fa-arrow-circle-up'></i></button>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </div>
+  </div>
 </body>
 
 </html>

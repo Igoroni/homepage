@@ -570,9 +570,54 @@ article {
 ul > li.win {
   margin-bottom: 0.5rem;
 }
+ul > li.win:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
 ul > li.win::before {
   content: url(./images/trophy.png);
 }
+
+/* experience-hover */
+.experience > li:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* to-top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  z-index: 99;
+  opacity: 0.4;
+}
+#myBtn > i {
+  font-size: 48px;
+  color: rgb(77, 241, 112);
+}
+#myBtn:hover {
+  opacity: 0.7;
+}
+
+/* word-divider */
+.energy::before {
+  content: url(./images/light-icon-png.png);
+}
+.be_feet::after {
+  content: url(./images/muscle.png);
+}
+.more_books::after {
+  content: url(/images/book.png);
+}
+.girlfriend::after {
+  content: url(./images/children.png);
+}
+.akuma_family::after {
+  content: url(./images/angry.png);
+}
+
 /* Contacts */
 .contacts {
   list-style: none outside none;
@@ -742,7 +787,7 @@ li.details > input {
 
 /* Highlighted list item */
 li.highlighted {
-  padding: 0.5em;
+  padding: 0.1em;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
 }
