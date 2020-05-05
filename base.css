@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid red;
+} */
+
 ::-moz-selection {
   background: yellow;
 }
@@ -247,6 +251,9 @@ article {
     width: 1127px;
     margin-top: calc((100% - 1127px) / 2);
     margin-bottom: calc((100% - 1127px) / 2);
+  }
+  .line_br {
+    display: none;
   }
 }
 
@@ -499,6 +506,17 @@ article {
   }
 }
 
+/* header */
+.header {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(46, 10, 87);
+}
+
+header > li {
+  display: inline-block;
+}
+
 /* Avatar */
 .avatar-wrapper {
   padding: 0;
@@ -625,25 +643,28 @@ ul > li.win::before {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 0;
   white-space: nowrap;
   font-size: 0.9em;
   font-weight: 400;
 }
 .contacts li {
+  text-align: center;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   margin-bottom: 0.25rem;
-  margin-right: 1em;
+  margin-right: 0.2em;
 }
 .contacts li:before {
   display: none;
 }
 .contacts li a {
-  color: rgb(138, 4, 4);
+  color: #fff;
   transition: color 0.2s ease-in-out;
 }
 .contacts li a.facebook:hover {
-  color: #3b5998;
+  color: #9aaeda;
 }
 .contacts li a.github:hover {
   color: dimgrey;
@@ -682,9 +703,9 @@ ul > li.win::before {
     margin-right: 0;
   }
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1000px) {
   .contacts {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     flex-direction: column;
   }
 }
