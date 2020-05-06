@@ -613,7 +613,7 @@ ul > li.win::before {
   background-color: rgba(0, 0, 0, 0.08);
 }
 .experience > li > div > img {
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 /* to-top button */
