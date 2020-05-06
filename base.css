@@ -620,7 +620,7 @@ ul > li.win::before {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 19px;
   right: 20px;
   cursor: pointer;
   border: none;
