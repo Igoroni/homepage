@@ -1,2 +1,5 @@
 # homepage
-"My  personal website. Basically this is just a résumé
+
+My personal website. Basically this is just a résumé
+
+Hocus-Pocus!
