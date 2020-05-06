@@ -612,7 +612,10 @@ ul > li.win::before {
 .experience > li:hover {
   background-color: rgba(0, 0, 0, 0.08);
 }
-
+.experience > li > div > img {
+  width: 100%;
+  height: auto;
+}
 /* to-top button */
 #myBtn {
   display: none;
