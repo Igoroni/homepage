@@ -516,6 +516,19 @@ article {
 header > li {
   display: inline-block;
 }
+.header > .details > input::after {
+  border-left: 0.5em solid white;
+}
+@media only screen and (max-width: 999px) {
+  #header_desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #header_mobile {
+    display: none;
+  }
+}
 
 /* Avatar */
 .avatar-wrapper {
